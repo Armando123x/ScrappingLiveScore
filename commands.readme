@@ -1,0 +1,21 @@
+#
+#
+##
+
+# 
+# 
+En selenium los comandos importantes son:
+
+###############################################
+- back () -> retrocede a una página ya visitada 
+| import selenium
+| driver = selenium.webdriver.Chrome(path)
+| driver.get(pag1)
+| driver.get(pag2)
+| driver.back()
+| driver.quit()
+
+###############################################
+- Diferencias entre driver.quit() y driver.close()
+- quit -> cierra el navegador 
+- close -> cierra la página recurrente
