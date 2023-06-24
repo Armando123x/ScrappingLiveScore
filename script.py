@@ -1,11 +1,15 @@
+import time 
+from keys import *
+from utils import *
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time 
-
 from selenium.webdriver.common.action_chains import ActionChains
+
+
 # Ruta al controlador de ChromeDriver (asegúrate de haberlo descargado y configurado correctamente)
 chrome_driver_path = r"C:\Users\Armando\Desktop\scripts\selenium\driver\chromedriver"
 
@@ -70,9 +74,7 @@ for n,elemento in enumerate(elementos_partidos):
 
     #Extraemos datos de las páginas hijas 
 
-    enlace_alineaciones = driver.find_element(By.CSS_SELECTOR,'a[href*="alineaciones"]')
-    enlace_estadisticas = driver.find_element(By.CSS_SELECTOR,'a[href*="estadisticas-del-partido"]')
-    enlace_cuotas       = driver.find_element(By.CSS_SELECTOR,'a[href*="comparacion-cuotas"]')
+
 
     enlace_alineaciones.click()
 
